@@ -7,3 +7,4 @@ faiss-cpu
 sqlalchemy
 pandas
 email-validator
+sentence-transformers
