@@ -3,8 +3,9 @@ langchain
 langchain-groq
 langchain-community
 python-dotenv
-pypdf
+PyPDF2
 faiss-cpu
 sqlalchemy
 pandas
 email-validator
+
