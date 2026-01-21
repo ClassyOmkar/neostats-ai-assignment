@@ -8,3 +8,5 @@ sqlalchemy
 pandas
 email-validator
 sentence-transformers
+openai   
+tiktoken
