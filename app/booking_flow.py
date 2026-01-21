@@ -56,14 +56,15 @@ class BookingFlow:
         elif step == "collect_service":
             if len(message.strip()) < 2:
                 return "Please specify a service.", state
+            # --- THIS IS THE FIX WE MADE ---
+            state["data"]["service"] = message
+            state["step"] = "collect_date"
+            return "Great. When would you like to come in? (e.g., Tomorrow 10 AM)", state
         
         elif step == "collect_date":
             try:
                 # Loose parsing for demo purposes
                 state["data"]["date"] = message
-                # Real implementation would parse datetime here
-                # dt = parser.parse(message)
-                # state["data"]["date_obj"] = dt
             except:
                 pass
             
